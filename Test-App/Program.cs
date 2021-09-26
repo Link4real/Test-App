@@ -6,7 +6,15 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("o       o       o");
+            Console.WriteLine("o       o        ");
+            Console.WriteLine("o       o       o");
+            Console.WriteLine("o       o       o");
+            Console.WriteLine("ooooooooo       o");
+            Console.WriteLine("o       o       o");
+            Console.WriteLine("o       o       o");
+            Console.WriteLine("o       o       o");
+            Console.ReadLine();
         }
     }
 }
