@@ -6,13 +6,9 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            //Data types
-            string phrase = "Phrase String";
-            char grade = '1'; //only 1 character!!!
-            int age = 12; //Number (Int)
-            double gpa = 3.2;
-            bool isMale = true;
-  
+            string phrase = "Text \nLine";
+            Console.WriteLine(phrase.Substring(6, 2));
+
             Console.ReadLine();
         }
     }
