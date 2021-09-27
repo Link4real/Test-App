@@ -6,14 +6,16 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("o       o       o");
-            Console.WriteLine("o       o        ");
-            Console.WriteLine("o       o       o");
-            Console.WriteLine("o       o       o");
-            Console.WriteLine("ooooooooo       o");
-            Console.WriteLine("o       o       o");
-            Console.WriteLine("o       o       o");
-            Console.WriteLine("o       o       o");
+
+            string characterName = "Merlin";   //string
+            int characterAge;               //int (for numbers)
+            characterAge = 1000000000;
+            Console.WriteLine("There once was a man called " + characterName + ".");
+            Console.WriteLine("He was " + characterAge + " years old!");
+            characterName = "PAPST FRANZISKUS";
+            Console.WriteLine("He liked the name " + characterName + ".");
+            Console.WriteLine("But didn't like being " + characterAge + " years old!");
+        
             Console.ReadLine();
         }
     }
