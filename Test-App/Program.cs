@@ -6,16 +6,13 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-
-            string characterName = "Merlin";   //string
-            int characterAge;               //int (for numbers)
-            characterAge = 1000000000;
-            Console.WriteLine("There once was a man called " + characterName + ".");
-            Console.WriteLine("He was " + characterAge + " years old!");
-            characterName = "PAPST FRANZISKUS";
-            Console.WriteLine("He liked the name " + characterName + ".");
-            Console.WriteLine("But didn't like being " + characterAge + " years old!");
-        
+            //Data types
+            string phrase = "Phrase String";
+            char grade = '1'; //only 1 character!!!
+            int age = 12; //Number (Int)
+            double gpa = 3.2;
+            bool isMale = true;
+  
             Console.ReadLine();
         }
     }
