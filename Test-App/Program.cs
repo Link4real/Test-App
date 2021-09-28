@@ -6,16 +6,25 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            int cubedNumber = cube(5);
-            Console.WriteLine(cubedNumber);
-           Console.ReadLine();
-        }
+            bool isCool = true;
+            bool isTall = false;
 
-        static int cube(int num)
-        {
-            int result = num * num * num;
-            return result;
-        }
+            if (isCool && isTall)
+            {
+                Console.WriteLine("You are a cool and tall person!");
+            } else if (isCool && !isTall) {
 
+                Console.WriteLine("You are cool but short (like tisigue)");
+            } else if (!isCool && isTall)
+            {
+
+                Console.WriteLine("You are not cool but tall! (like me)");
+            } else
+            {
+                Console.WriteLine("You aren't cool and very short!");
+            }
+
+            Console.ReadLine();
+        }
     }
 }
