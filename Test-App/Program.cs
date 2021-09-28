@@ -6,9 +6,12 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            string phrase = "Text \nLine";
-            Console.WriteLine(phrase.Substring(6, 2));
-
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            string age = Console.ReadLine();
+            Console.WriteLine("This is your name: " + name);
+            Console.WriteLine("This is your age: " + age);
             Console.ReadLine();
         }
     }
