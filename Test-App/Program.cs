@@ -6,13 +6,27 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            int[] luckyNumbers = { 4, 8, 16, 15, 45, 11 };
-            string[] friends = new string[5];
-            friends[0] = "a";
-            friends[1] = "b";
-            Console.WriteLine(luckyNumbers[0] + luckyNumbers[3] + " = " + friends[0]);
-
+            Game();
             Console.ReadLine();
+        }
+
+        static void Game()
+        {
+            string color, noun, people;
+
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
+
+            Console.Write("Enter a plural noun: ");
+            noun = Console.ReadLine();
+
+            Console.Write("Enter a celebrity: ");
+            people = Console.ReadLine();
+
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("Roses are " + color);
+            Console.WriteLine(noun + " are " + "blue");
+            Console.WriteLine("I love " + people + "!");
         }
     }
 }
