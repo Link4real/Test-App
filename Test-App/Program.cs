@@ -6,27 +6,16 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            Game();
-            Console.ReadLine();
+            int cubedNumber = cube(5);
+            Console.WriteLine(cubedNumber);
+           Console.ReadLine();
         }
 
-        static void Game()
+        static int cube(int num)
         {
-            string color, noun, people;
-
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
-
-            Console.Write("Enter a plural noun: ");
-            noun = Console.ReadLine();
-
-            Console.Write("Enter a celebrity: ");
-            people = Console.ReadLine();
-
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Roses are " + color);
-            Console.WriteLine(noun + " are " + "blue");
-            Console.WriteLine("I love " + people + "!");
+            int result = num * num * num;
+            return result;
         }
+
     }
 }
