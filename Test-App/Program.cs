@@ -6,12 +6,22 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            Console.Write("Enter your age: ");
-            string age = Console.ReadLine();
-            Console.WriteLine("This is your name: " + name);
-            Console.WriteLine("This is your age: " + age);
+            string color, noun, people;
+
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
+
+            Console.Write("Enter a plural noun: ");
+            noun = Console.ReadLine();
+
+            Console.Write("Enter a celebrity: ");
+            people = Console.ReadLine();
+
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("Roses are " + color);
+            Console.WriteLine(noun + " are " + "blue");
+            Console.WriteLine("I love "+ people +"!");
+
             Console.ReadLine();
         }
     }
