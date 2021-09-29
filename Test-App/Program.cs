@@ -6,35 +6,42 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Valid Operators: + - * /");
-            Console.Write("Enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter Operator: ");
-            string op = Console.ReadLine();
-
-            Console.Write("Enter a number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-
-            if (op == "+")
-            {
-                Console.WriteLine(num1 + num2);
-            } else if (op == "-")
-            {
-                Console.WriteLine(num1 - num2);
-            } else if (op == "*")
-            {
-                Console.WriteLine(num1 * num2);
-            } else if (op == "/")
-            {
-                Console.WriteLine(num1 / num2);
-            } else
-            {
-                Console.WriteLine("Error 404: Invalid Operator");
-            }
-
+            Console.WriteLine(GetDay(1));
             Console.ReadLine();
         }
+        static string GetDay(int dayNum)
+        {
+            string dayName;
 
+            switch(dayNum)
+            {
+                case 0:
+                    dayName = "Monday";
+                    break;
+                case 1:
+                    dayName = "Tuesday";
+                    break;
+                case 2:
+                    dayName = "Wednesday";
+                    break;
+                case 3:
+                    dayName = "Thursday";
+                    break;
+                case 4:
+                    dayName = "Friday";
+                    break;
+                case 5:
+                    dayName = "Saturday";
+                    break;
+                case 6:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Invalid day number!";
+                    break;
+            }
+
+            return dayName;
+        }
     }
 }
