@@ -6,25 +6,27 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            bool isCool = true;
-            bool isTall = false;
-
-            if (isCool && isTall)
+            Console.WriteLine(GetMax(20, 10, 50));
+            Console.ReadLine();
+        }
+        static int GetMax(int num1, int num2, int num3)
+        {
+            int result;
+            if (num1 >= num2 && num1 >= num3)
             {
-                Console.WriteLine("You are a cool and tall person!");
-            } else if (isCool && !isTall) {
-
-                Console.WriteLine("You are cool but short (like tisigue)");
-            } else if (!isCool && isTall)
+                result = num1;
+            }
+            else if (num2 >= num1 && num2 >= num3)
             {
-
-                Console.WriteLine("You are not cool but tall! (like me)");
-            } else
+                result = num2;
+            }
+            else
             {
-                Console.WriteLine("You aren't cool and very short!");
+                result = num3;
             }
 
-            Console.ReadLine();
+
+            return result;
         }
     }
 }
