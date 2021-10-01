@@ -6,33 +6,14 @@ namespace Test_App
     {
         static void Main(string[] args)
         {
-            string secretWord = "Link";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool OutOfGuesses = false;
 
-            do
+            int[] luckyNumbers = { 4, 8, 5, 88, 1};
+            for (int i = 0; i < luckyNumbers.Length; i++)
             {
-                if (guessCount < guessLimit)
-                {
-                    Console.Write("Enter guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                }
-                else
-                {
-                    OutOfGuesses = true;
-                }
-            } while (secretWord != guess && !OutOfGuesses);
-            if (OutOfGuesses)
-            {
-                Console.WriteLine("You Lose!");
-            } else
-            {
-                Console.WriteLine("You Win!");
+                Console.WriteLine(luckyNumbers[i]);
             }
-            Console.ReadLine();
+
+            Console.ReadKey();
         }
     }
 }
